@@ -1,0 +1,2 @@
+# scrop
+Bilmiyorum
